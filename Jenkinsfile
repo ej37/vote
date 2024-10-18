@@ -19,7 +19,7 @@ pipeline {
       }
       stage('Unit Test'){
           agent{
-            docker{
+            kubernetes{
               image 'python:alpine3.17'
               args '--user root'
             }
